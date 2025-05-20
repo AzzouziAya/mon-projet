@@ -140,3 +140,56 @@ html{
     cursor: pointer;
     font-weight: bold;
 }
+/* Barre de navigation Admin */
+.admin-nav {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.admin-nav h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.admin-nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+}
+
+.home-btn {
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+}
+
+.logout-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+}
+
+.nav-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Icônes FontAwesome */
+.fas {
+    font-size: 1.2rem;
+}

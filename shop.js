@@ -1,226 +1,45 @@
-const productsData= [
-    {
-       
-        title: "Tulip Poster",
-        description: "Poster haute qualité de tulipe symbolisant l'amour parfait • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", 
-        rating: "5",
-        price: "90DH",
-        category: "art",
-        image: "8.jpg"
-        
-    },
-    {
-       
-        title: "Take it one day at a time",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", 
-        rating: "4",
-        price: "70DH",
-        category: "quotes",
-        image: "img8.jpg"
-    },
-    {
-      
-        title: "Moana Poster",
-        description: "Poster haute qualité de Moana • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", 
-        rating: "5",
-        price: "60DH",
-        category: "movies",
-        image: "6mov.png"
-       
-    },
-    {
-       
-        title: "Mystic Rock",
-        description: "Poster haute qualité  • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", 
-        rating: "4",
-        price: "50DH",
-        category: "music",
-        image: "img2.jpg"
-    },
-    {
-      
-        title: "Flowers",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", 
-        rating: "4",
-        price: "40DH",
-        category: "art",
-        image: "img1 copy.jpg"
-    },
-    {
-       
-        title: "Heart Poster",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", 
-        rating: "4",
-        price: "40DH",
-        category: "art",
-        image: "img2 copy.jpg"
-    },
-    {  
-       
-        title: "Eye Poster",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", 
-        rating: "5",
-        price: "90DH",
-        category: "art",
-        image: "img3.jpg"
-    },
-    { 
-        
-        title: "Good Things Take Time",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", 
-        rating: "4",
-        price: "70DH",
-        category: "quotes",
-        image: "img1Q.jpg"
-    },
-    {   
-       
-        title: "You Are Strong As Hell",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", 
-        rating: "4",
-        price: "50DH",
-        category: "quotes",
-        image: "img3Q.jpg"
-    },
-    {
-       
-        title: "Focus On The Good",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", 
-        rating: "4",
-        price: "80DH",
-        category: "quotes",
-        image: "img4Q.jpg"
-    },
-    {
-        
-        title: "Don't Let The Bad Days Win",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", 
-        rating: "4",
-        price: "60DH",
-        category: "quotes",
-        image: "img10Q.jpg"
-    },
-    {
-       
-        title: "Another Day Another Slay",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", 
-        rating: "4",
-        price: "50DH",
-        category: "quotes",
-        image: "img9Q.jpg"
-    },
-    {
-       
-        title: "Treat People With Kindness",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", 
-        rating: "4",
-        price: "60DH",
-        category: "quotes",
-        image: "img6Q.jpg"
-    },
-    {
-       
-        title: "Cars",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", 
-        rating: "5",
-        price: "90DH",
-        category: "movies",
-        image: "img2M.jpg"
-    },
-    {
-      
-        title: "Friends",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", 
-        rating: "4",
-        price: "70DH",
-        category: "movies",
-        image: "img3M.jpg"
-    },
-    {
-       
-        title: "Titanic",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", // Nouveau
-        rating: "4",
-        price: "90DH",
-        category: "movies",
-        image: "1mov.png"
-    },
-    {
-       
-        title: "Music is life",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", // Nouveau
-        rating: "4",
-        price: "60DH",
-        category: "music",
-        image: "img7MU.jpg"
-    },
-    {
-       
-        title: "Music",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", // Nouveau
-        rating: "4",
-        price: "50DH",
-        category: "music",
-        image: "img1MU.jpg"
-    },
-    {
-      
-        title: "Pink Poster",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", // Nouveau
-        rating: "5",
-        price: "90DH",
-        category: "art",
-        image: "3.jpg"
-    },
-    {
-        
-        title: "Give yourself time to rest",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", // Nouveau
-        rating: "5",
-        price: "90DH",
-        category: "quotes",
-        image: "1.jpg"
-    },
-    {
-        
-        title: "Pomegranate",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", // Nouveau
-        rating: "5",
-        price: "60DH",
-        category: "art",
-        image: "imart.jpg"
-    },
-    {
-        
-        title: "Dancing Queen!",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", // Nouveau
-        rating: "5",
-        price: "70DH",
-        category: "art",
-        image: "imgart2.jpg"
-    },
-    {
-        
-        title: "CowGirls",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", // Nouveau
-        rating: "5",
-        price: "50DH",
-        category: "art",
-        image: "imgart3.jpg"
-    },
-    {
-        
-        title: "Sabrina Carpenter",
-        description: "Poster haute qualité • Dimensions 30x40cm • Papier mat 200g • Livré avec cadre optionnel", // Nouveau
-        rating: "5",
-        price: "90DH",
-        category: "music",
-        image: "imgm.jpg"
-    },
+// shop.js (AJOUTE au début)
+function refreshProducts() {
+    const products = window.productManager.getProducts();
+    // Ton code d'affichage existant (displayProducts) ici
+}
 
-]
+// Écouteurs pour mettre à jour automatiquement
+window.addEventListener('productsUpdated', refreshProducts);
+document.addEventListener('DOMContentLoaded', refreshProducts);
+// Utilisez getProducts() au lieu de productsData directement
+let productsData = JSON.parse(localStorage.getItem('products')) || [];
+function loadProducts() {
+    const storedProducts = localStorage.getItem('products');
+    if (storedProducts) {
+        productsData = JSON.parse(storedProducts);
+        displayProducts(productsData);
+    }
+}
+function refreshProducts() {
+    const freshData = JSON.parse(localStorage.getItem('products')) || [];
+    productsData = freshData;
+    displayProducts(freshData);
+}
 
-// Fonction pour afficher les produits
+// Écouteurs d'événements
+window.addEventListener('storage', () => refreshProducts());
+window.addEventListener('productsUpdated', () => refreshProducts());
+
+// Initialisation au chargement
+document.addEventListener('DOMContentLoaded', refreshProducts);
+
+// Au chargement ET quand les produits changent
+document.addEventListener('DOMContentLoaded', loadProducts);
+window.addEventListener('storage', loadProducts);
+window.addEventListener('productsUpdated', (e) => {
+    productsData = e.detail.products;
+    displayProducts(productsData);
+});
+window.addEventListener('productsUpdated', (e) => {
+    window.productsData = e.detail.products;
+    displayProducts(window.productsData);
+  });
 function displayProducts(productsToShow) {
     const container = document.querySelector('.pro-container');
     container.innerHTML = '';
@@ -250,7 +69,8 @@ function displayProducts(productsToShow) {
 
 // Initialisation - Affiche tous les produits au chargement
 document.addEventListener('DOMContentLoaded', () => {
-    displayProducts(productsData);
+    displayProducts(window.productsData || []);
+  
     
     // Gestion des filtres
     const buttons = document.querySelectorAll(".buttons button");
@@ -407,6 +227,7 @@ function updateCart() {
 
 // Gestion des événements
 document.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('showCart');
     // Ajout au panier
     document.addEventListener('click', function(e) {
         if (e.target.classList.contains('addCart')) {
